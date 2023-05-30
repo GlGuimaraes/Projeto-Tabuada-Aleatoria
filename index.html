@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    </style>
+    <title>Contas Matemáticas</title>
+  </head>
+  <body>
+    <main class="tela">
+        <div class="esquerda">
+            <img src="./img/professor.svg" alt="IMAGEM DO PROFESSOR" class="professor">
+        </div>
+      <section class="tela_menor">
+
+        <!--AQUI ESTÁ O SISTEMA DE ADIÇÃO -->
+
+        <br>
+        <h1 class="titulo">Acerte o Cálculo</h1>
+        <button id="botaoIniciar">iniciar cálculo</button>
+        <div>
+          <p>
+            <span class="valores" id="valorSoma1">0</span> +
+            <span class="valores" id="valorSoma2">0</span>
+          </p>
+          <input type="number" name="respostaUsuario" id="respostaUsuario" />
+          <button id="botaoVerificarResposta">Verificar Resposta</button>
+          <p id="respostaVerificacao"></p>
+        </div>
+
+        <!-- AQUI ESTÁ O SISTEMA DE SUBTRAÇÃO -->
+        
+        <div>
+
+          <p>
+            <span class="valores" id="valorSub1">0</span> -
+            <span class="valores" id="valorSub2">0</span>
+          </p>
+          <input type="number" name="respostaUsuario" id="respostaUsuarioSub" />
+          <button id="botaoVerificarRespostaSub">Verificar Resposta</button>
+          <p id="respostaVerificacaoSub"></p>
+        </div>
+
+        <!-- AQUI ESTÁ O SISTEMA DE MULTIPLICAÇÃO -->
+
+        <div>
+            <p>
+              <span class="valores" id="valorMult1">0</span> x
+              <span class="valores" id="valorMult2">0</span>
+            </p>
+            <input type="number" name="respostaUsuario" id="respostaUsuarioMult" />
+            <button id="botaoVerificarRespostaMult">Verificar Resposta</button>
+            <p id="respostaVerificacaoMult"><br></p>
+            <br>
+          </div>
+      </section>
+    </main>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400&family=Orbitron:wght@500&family=Russo+One&family=Sora:wght@500&display=swap" rel="stylesheet">
+  </body>
+</html>
