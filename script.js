@@ -39,6 +39,10 @@ botaoIniciar.addEventListener("click", () => {
 
   valorMult1.innerText = mult1;
   valorMult2.innerText = mult2;
+
+  respostaVerificacao.innerHTML = ` `
+  respostaVerificacaoSub.innerHTML = ` `
+  respostaVerificacaoMult.innerHTML = ` `
 });
 
 /* CRIANDO O SISTEMA DE ADIÇÃO */
@@ -57,7 +61,7 @@ botaoVerificarResposta.addEventListener("click", () => {
     respostaVerificacao.innerHTML = `<p class="p_resposta">Você acertou!&#x2705<p>`;
   } else {
     respostaUsuario.value = "";
-    respostaVerificacao.innerHTML = `<p class="p_resposta"><b>Você errou!</b>&#x274C a resposta correta seria <b>${resultado}</b> </p>`;
+    respostaVerificacao.innerHTML = `<p class="p_resposta">&#x274C A resposta correta seria <b>${resultado}</b> </p>`;
   }
 });
 
@@ -77,7 +81,7 @@ botaoVerificarRespostaSub.addEventListener("click", () => {
     respostaVerificacaoSub.innerHTML = `<p class="p_resposta">Você acertou!&#x2705</p>`;
   } else {
     respostaUsuarioSub.value = "";
-    respostaVerificacaoSub.innerHTML = `<p class="p_resposta"><b>Você errou!</b>&#x274C a resposta correta seria <b>${resultado}</b>`;
+    respostaVerificacaoSub.innerHTML = `<p class="p_resposta">&#x274C A resposta correta seria <b>${resultado}</b>`;
   }
 });
 
@@ -97,6 +101,6 @@ botaoVerificarRespostaMult.addEventListener("click", () => {
       respostaVerificacaoMult.innerHTML = `<p class="p_resposta">Você acertou!&#x2705</p>`;
     } else {
       respostaUsuarioMult.value = "";
-      respostaVerificacaoMult.innerHTML = `<p class="p_resposta"><b>Você errou!</b>&#x274C a resposta correta seria <b>${resultado}</b>`;
+      respostaVerificacaoMult.innerHTML = `<p class="p_resposta">&#x274C A resposta correta seria <b>${resultado}</b>`;
     }
   });
