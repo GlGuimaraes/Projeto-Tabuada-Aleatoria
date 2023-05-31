@@ -40,9 +40,9 @@ botaoIniciar.addEventListener("click", () => {
   valorMult1.innerText = mult1;
   valorMult2.innerText = mult2;
 
-  respostaVerificacao.innerHTML = ` `
-  respostaVerificacaoSub.innerHTML = ` `
-  respostaVerificacaoMult.innerHTML = ` `
+  respostaVerificacao.innerHTML = ``
+  respostaVerificacaoSub.innerHTML = ``
+  respostaVerificacaoMult.innerHTML = ``
 });
 
 /* CRIANDO O SISTEMA DE ADIÇÃO */
@@ -58,10 +58,10 @@ botaoVerificarResposta.addEventListener("click", () => {
 
   if (parseInt(respostaUsuario.value) === resultado) {
     respostaUsuario.value = "";
-    respostaVerificacao.innerHTML = `<p class="p_resposta">Você acertou!&#x2705<p>`;
+    respostaVerificacao.innerHTML = `<p class="p_resposta">Parabéns!! Você acertou!&#x2705</p>`;
   } else {
     respostaUsuario.value = "";
-    respostaVerificacao.innerHTML = `<p class="p_resposta">&#x274C A resposta correta seria <b>${resultado}</b> </p>`;
+    respostaVerificacao.innerHTML = `<p class="p_resposta">&#x274C Você errou tente novamente!</p>`;
   }
 });
 
@@ -78,10 +78,10 @@ botaoVerificarRespostaSub.addEventListener("click", () => {
 
   if (parseInt(respostaUsuarioSub.value) === resultado) {
     respostaUsuarioSub.value = "";
-    respostaVerificacaoSub.innerHTML = `<p class="p_resposta">Você acertou!&#x2705</p>`;
+    respostaVerificacaoSub.innerHTML = `<p class="p_resposta">Parabéns!! Você acertou!&#x2705</p>`;
   } else {
     respostaUsuarioSub.value = "";
-    respostaVerificacaoSub.innerHTML = `<p class="p_resposta">&#x274C A resposta correta seria <b>${resultado}</b>`;
+    respostaVerificacaoSub.innerHTML = `<p class="p_resposta">&#x274C Você errou tente novamente!</p>`;
   }
 });
 
@@ -98,9 +98,9 @@ botaoVerificarRespostaMult.addEventListener("click", () => {
   
     if (parseInt(respostaUsuarioMult.value) === resultado) {
       respostaUsuarioMult.value = "";
-      respostaVerificacaoMult.innerHTML = `<p class="p_resposta">Você acertou!&#x2705</p>`;
+      respostaVerificacaoMult.innerHTML = `<p class="p_resposta">Parabéns!! Você acertou!&#x2705</p>`;
     } else {
       respostaUsuarioMult.value = "";
-      respostaVerificacaoMult.innerHTML = `<p class="p_resposta">&#x274C A resposta correta seria <b>${resultado}</b>`;
+      respostaVerificacaoMult.innerHTML = `<p class="p_resposta">&#x274C Você errou tente novamente!</p>`;
     }
   });
